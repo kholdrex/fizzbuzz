@@ -23,13 +23,13 @@ class FizzBuzz
     process(current_result.push(new_value), current_iter + 1, max_iter)
   end
 
-  def devidable?(x, y)
+  def dividable?(x, y)
     (x % y) == 0
   end
 
   def value_or_number(iter)
     DEFAULT.each do |k, v|
-      return v if devidable?(iter, k.to_i)
+      return v if dividable?(iter, k.to_i)
     end
     iter
   end
